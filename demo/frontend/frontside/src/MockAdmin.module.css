@@ -1,0 +1,40 @@
+.container 
+{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    
+}
+
+.msg_test
+{   margin:0;
+    padding:0;
+    margin-bottom: 30px;
+    color:#1f1d05;
+}
+
+.btn
+{
+    width:100%;
+    background-color: chocolate;
+    border: 1px solid #1f1d05;
+    height:60px;
+    border-radius: 8px;
+    color:rgb(45, 45, 45);
+}
+.btn:nth-child(2)
+{
+    margin-top:25px;
+}
+
+.btn:hover
+{
+    width:100%;
+    background-color: rgb(255, 136, 51);
+    border: 1px solid #1f1d05;
+    height:60px;
+    border-radius: 8px;
+    transition:0.2s all;
+}

@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+/*-------------------------------------------------------------------------------
+----------------------------------Structure------------------------------------*/
+* {
+    margin: 0px;
+    font-family: "Oswald";
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 20pt;
+    box-sizing: border-box;
+    color:#CDBE95;
+}
+
+.container {
+    max-width: 1650px;
+    margin: auto;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.firstRowMobile {
+    display: none;
+}
+
+.firstRow {
+    display: grid;
+    grid-template-columns: 30% 60% 10%;
+    grid-template-rows: 150px;
+    padding-top: 20px;
+    background: rgb(205, 190, 149);
+    background: linear-gradient(180deg, rgba(205, 190, 149, 1) 0%, rgba(205, 190, 149, 0) 100%);
+}
+
+.secondRow {
+    display: grid;
+    grid-template-columns: 10% 20% 20% 20% 20% 10%;
+    grid-template-rows: 50px;
+    background-color: #323431;
+    border-top: 4px solid #CDBE95;
+    border-bottom: 4px solid #BE3D2E;
+}
+
+.thirdRow {
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: 60px;
+    background: #EBE5D7;
+    text-align: center;
+    vertical-align: text-bottom;
+    padding-top: 20px;
+    border-bottom: 4px solid #BE3D2E;
+}
+
+.fourthRow {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    background: #323431;
+    border-bottom: 4px solid #CDBE95;
+}
+
+.fifthRow {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    background: #BE3D2E;
+    color:#323431;
+    border-bottom: 4px solid #CDBE95;
+}
+
+.sixthRow {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    background: #323431;
+    border-bottom: 4px solid #CDBE95;
+}
+
+.seventhRow {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    background: #BE3D2E;
+    border-bottom: 4px solid #CDBE95;
+}
+
+.eithRow {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    background: #323431;
+    border-bottom: 4px solid #CDBE95;
+}
+
+.ninthRow {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    background: #BE3D2E;
+}
+
+.tenthRow {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    background: #CDBE95;
+}
+/*-------------------------------------------------------------------------------
+-----------------------------------Buttons-------------------------------------*/
+.btn {
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+    display: inline-block;
+    color: #CDBE95;
+}
+
+.btn:hover {
+    background-color: #dddddd;
+}
+
+/*-------------------------------------------------------------------------------
+----------------------------------First Row------------------------------------*/
+.profileInfo {
+    text-align: right;
+    line-height: 1.15em;
+    margin-right: 40px;
+}
+
+.problem,
+.profile,
+.quit {
+    font-size: 12pt;
+    margin-top: 10px;
+}
+
+.problem {
+    color: #BE3D2E;
+}
+
+.profilepic {
+    margin-right: 40px;
+}
+
+.logopic {
+    margin-left: 40px;
+}
+
+/*-------------------------------------------------------------------------------
+---------------------------------Second Row------------------------------------*/
+.login {
+    color:#000000;
+}
+
+.loginpic1 {
+    transform: translateY(18px);
+}
+
+.loginpic2 {
+   
+    transition: 2s all;
+   
+}
+
+.signin
+{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/*-------------------------------------------------------------------------------
+----------------------------------Third Row------------------------------------*/
+.clubrating {
+    color: #BE3D2E;
+}
+
+/*-------------------------------------------------------------------------------
+----------------------------------Text Style-----------------------------------*/
+h1 {
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+p {
+    margin-top: 15px;
+    margin-left: 80px;
+    margin-right: 40px;
+}
+
+li {
+    margin-left: 80px;
+    margin-top: 15px;
+    margin-right: 40px;
+}
+
+.grey {
+    color:#323431;
+}
+
+.grey1 {
+    color:#323431;
+}
+
+.attention {
+    margin-left: 120px;
+    margin-right: 40px;
+    margin-bottom: 15px;
+}
+
+.attention_grey {
+    margin-left: 120px;
+    color:#323431;
+    margin-right: 40px;
+    margin-bottom: 15px;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 15px;
+    margin-right: 40px;
+}
+
+.profileheader {
+    color:black;
+    margin-top: 0px;
+    margin-right: 0px;
+}

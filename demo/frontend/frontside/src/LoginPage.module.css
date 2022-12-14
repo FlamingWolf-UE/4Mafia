@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+/*-------------------------------------------------------------------------------
+----------------------------------Structure------------------------------------*/
+* {
+    margin: 0px;
+    font-family: "Oswald";
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 20pt;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1650px;
+    margin: auto;
+
+}
+
+
+
+.firstRow {
+    display: grid;
+    grid-template-columns: 30% 60% 10%;
+    grid-template-rows: 150px;
+    padding-top: 20px;
+    background: rgb(205, 190, 149);
+    background: linear-gradient(180deg, rgba(205, 190, 149, 1) 0%, rgba(205, 190, 149, 0) 100%);
+    border-bottom: 5px solid #CDBE95;
+}
+
+.firstRowMobile {
+    display: none;
+}
+
+.secondRow {
+    
+    border-top: 5px solid#BE3D2E;
+    background-image: url("../../frontside/public/media/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:1080px;
+    
+}
+
+/*-------------------------------------------------------------------------------
+-----------------------------------Buttons-------------------------------------*/
+.btn {
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+    display: inline-block;
+    color: #323431; 
+}
+
+.forgotPassword:hover {
+    color: #b61f0e;
+}
+
+.login:hover {
+    background-color: #dddddd;
+}
+
+.loginVK:hover {
+    color: #8f8465;
+}
+
+.forgotPassword {
+    color: #BE3D2E;
+    font-size: 12pt;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.login {
+    margin-top: 30px;
+    padding: 5px 20px;
+    background-color: #CDBE95;
+    border-radius: 10px;
+    width: 420px;
+}
+
+.loginVK{
+    margin-top: 10px;
+    padding: 0px 20px;
+    line-height: 55px;
+    background-color: inherit;
+    border-radius: 10px;
+    color:#CDBE95
+}
+/*-------------------------------------------------------------------------------
+----------------------------------First Row------------------------------------*/
+.logopic{
+    margin-left: 40px;
+}
+
+/*-------------------------------------------------------------------------------
+---------------------------------Second Row------------------------------------*/
+.LoginForm {
+    background-color: #323431;
+    color: #CDBE95;
+    border-radius:10px;
+    width: 450px;
+    height: 385px;
+    margin: 50px auto;
+    padding-top:1px;
+}
+
+input {
+    border-radius: 5px; 
+    background: #CDBE95; 
+    outline: none;
+    height: 50px; 
+    width: 420px;
+    text-transform: none;
+    color:black;
+}
+
+label { 
+    display:block 
+}
+
+.someText {
+    color: #CDBE95;
+    text-align: center;
+    margin:auto;
+    margin-top: 20px;
+}
+
+.logintext{
+    width: 420px;
+    margin: auto;
+}
+
+.div {
+    width:100%;
+    display:flex;
+    justify-content: center;
+}
+
+.VKPic {
+    width:40px;
+    transform: translate(5px, 8px);
+}

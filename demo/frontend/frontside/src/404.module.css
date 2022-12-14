@@ -1,0 +1,33 @@
+.imgDiv
+{
+    
+    max-width:350px;
+    max-height:350px;
+    
+    width:100%;
+    height:100%;
+}
+
+.container
+{  
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    margin-top:150px;
+}
+.imgDiv img
+{
+    
+     width:100%;
+      height:100%;
+}
+
+.text
+{
+    color:black;
+    margin:0;
+    padding:0;
+    text-align: center;
+   
+}

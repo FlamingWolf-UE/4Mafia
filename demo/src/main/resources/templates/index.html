@@ -1,0 +1,45 @@
+
+<!doctype html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml" xmlns:sec="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+</head>
+
+<body>
+<div class="container">
+    <div sec:authorize="isAuthenticated()">
+        This content is only shown to authenticated users.
+    </div>
+    <div sec:authorize="hasRole('USER')">
+        This content is only shown to users.
+    </div>
+    <div sec:authorize="hasRole('ADMIN')">
+        This content is only shown to administrators.
+    </div>
+</div>
+
+<p th:text="${user.getNickname()}"></p>
+<p th:text="${user.getAltNickname()}"></p>
+<div style="display:flex; flex-direction:row;">
+    <p style="margin-left:10px; margin-right:10px;" >Id</p>
+    <p style="margin-left:10px; margin-right:10px;" >Стол</p>
+    <p style="margin-left:10px; margin-right:10px;" >Результат</p>
+    <p style="margin-left:10px; margin-right:10px;" >Роль</p>
+    <p style="margin-left:10px; margin-right:10px;" >Статус</p>
+</div>
+<th:div style="display:flex; flex-direction:row;" th:each="gameMember:${user.getMembers()}">
+    <p style="margin-left:10px; margin-right:10px;" th:text="${gameMember.getGame().getId()}"></p>
+    <p style="margin-left:10px; margin-right:10px;" th:text="${gameMember.getGame().getGameNumber()}"></p>
+    <p style="margin-left:10px; margin-right:10px;" th:text="${gameMember.getGame().getResult().getDescription()}"></p>
+    <p style="margin-left:10px; margin-right:10px;" th:text="${gameMember.getRole().getName()}"></p>
+    <p style="margin-left:10px; margin-right:10px;" th:text="${gameMember.isWin()} ? 'Победа' : 'Поражение'"></p>
+</th:div>
+
+</body>
+
+</html>

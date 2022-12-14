@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+/*-------------------------------------------------------------------------------
+----------------------------------Structure------------------------------------*/
+* {
+    margin: 0px;
+    font-family: "Oswald";
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 20pt;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1650px;
+    margin: auto;
+}
+
+
+
+.firstRowMobile {
+    display: none;
+}
+
+.firstRow {
+    display: grid;
+    grid-template-columns: 30% 20% 50%;
+    grid-template-rows: 150px;
+    padding-top: 20px;
+    background: rgb(205, 190, 149);
+    background: linear-gradient(180deg, rgba(205, 190, 149, 1) 0%, rgba(205, 190, 149, 0) 100%);
+}
+
+.secondRow {
+    display: grid;
+    grid-template-columns: 10% 20% 20% 20% 20% 10%;
+    grid-template-rows: 50px;
+    background-color: #323431;
+    border-top: 4px solid #CDBE95;
+    border-bottom: 4px solid #BE3D2E;
+}
+
+.thirdRow {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    background: #EBE5D7;
+    text-align: center;
+    vertical-align: text-bottom;
+    padding-bottom: 15px;
+}
+
+.fourthRow {
+    display: flex;
+    justify-content: space-around;
+    background: #323431;
+    line-height: 2.5em;
+}
+
+.hr1 {
+    background-color: #BE3D2E;
+    height: 4px;
+}
+
+.hr2 {
+    background-color: #323431;
+    height: 15px;
+}
+
+.fifthRow {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:80px;
+    background: #BE3D2E;
+    text-align: center;
+    color: #323431;
+}
+
+.sixthRow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../../frontside/public/media/backgrpund-pic.PNG");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    padding-top: 55px;
+    padding-bottom:100px;
+}
+/*-------------------------------------------------------------------------------
+-----------------------------------Buttons-------------------------------------*/
+.btn {
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+    display: inline-block;
+    color: #CDBE95;
+}
+
+.btn:hover {
+    background-color: #dddddd;
+}
+/*-------------------------------------------------------------------------------
+----------------------------------First Row------------------------------------*/
+.profileinfo {
+    text-align: right;
+    line-height: 1.15em;
+    margin-right: 40px;
+}
+
+
+
+.Pagination_Container li
+{
+    margin:0;
+    padding:0;
+}
+
+.Pagination_Container button
+{
+   color: #CDBE95;
+}
+
+
+.Pagination_Container div
+{
+   color: #CDBE95;
+}
+
+.login {
+    color:#000000;
+}
+
+.logopic {
+    margin-left: 40px;
+}
+
+.loginpic1 {
+    transform: translateY(18px);
+}
+
+.loginpic2 {
+    transform: translateY(30px);
+}
+/*-------------------------------------------------------------------------------
+---------------------------------Second Row------------------------------------*/
+
+
+/*-------------------------------------------------------------------------------
+----------------------------------Third Row------------------------------------*/
+.clubrating {
+    color: #BE3D2E
+}
+.ratingdesc
+{
+    padding:0;
+    margin:0;
+}
+
+/*-------------------------------------------------------------------------------
+---------------------------------Fourth Row------------------------------------*/
+.formclub,
+.formseason {
+    margin-top: 10px;
+    margin-left: 40px;
+}
+
+.formclub label,
+.formseason label {
+    color: #CDBE95;
+}
+
+.inlinep
+{
+    display: flex;
+    flex-direction: row;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    height: 55px;
+    width: 55px;
+    transform: translateY(0.6em);
+}
+
+.text1 {
+    color: #EBE5D7 !important;
+}
+
+.text2 {
+    color: #CDBE95;
+    transform: translateX(61px);
+}
+/*-------------------------------------------------------------------------------
+---------------------------------Fifth Row-------------------------------------*/
+
+
+/*-------------------------------------------------------------------------------
+---------------------------------Sixth Row-------------------------------------*/
+table,
+th,
+td {
+    color:#000000;
+    width: 1400px;
+    border: 1px solid;
+    background: #ECE6D8;
+    font-size: 12pt;
+    text-align: center;
+}
+
+table {
+    overflow: hidden;
+    border-radius: 16px;
+    border-collapse: collapse;
+    
+}
+
+th,
+td {
+    padding: 0px 10px 0px 10px;
+    /*вверх право низ лево*/
+}
+ 
+
+
+.header :nth-child(even) {
+    background: #CDBE95;
+}
+
+.datarow :nth-child(even) {
+    background: #CDBE95;
+}
